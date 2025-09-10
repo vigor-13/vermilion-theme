@@ -43,4 +43,13 @@
 	pre code {
 		font-style: normal;
 	}
+
+	.mermaid {
+		background: color-mix(in oklab, #909090 3%, transparent);
+		border-radius: 10px;
+	}
+	.mermaid > * {
+		transform: scale(0.9);
+		transform-origin: center;
+	}
 }
