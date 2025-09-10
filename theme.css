@@ -1,34 +1,46 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
-}
+.theme-dark {
+	--text-normal: #909090;
+	--bold-color: #d1462c;
+	--link-color: #5590d9;
+	--link-external-color: #5590d9;
+	--code-normal: #d8d2c9;
+	--h1-color: #f4f6f0;
+	--h2-color: #f4f6f0;
+	--h3-color: #f4f6f0;
+	--h4-color: #f4f6f0;
+	--h5-color: #f4f6f0;
+	--h6-color: #f4f6f0;
+	--checkbox-radius: 100px;
+	--checkbox-color: #00ac5a;
+	--checkbox-marker-color: #000000;
+	--checklist-done-color: color-mix(in oklab, #909090 60%, transparent);
+	--line-height-normal: 1.6;
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
-}
+	.view-header,
+	.view-content {
+		background-color: color-mix(
+			in oklab,
+			#000000 30%,
+			transparent
+		) !important;
+	}
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
-}
+	h1 {
+		margin-block-start: var(--p-spacing);
+		margin-block-end: 2.4rem;
+	}
 
-.menu {
-	padding: var(--size-2-1);
-}
+	h2 {
+		border-bottom: 1px solid;
+		border-bottom-color: color-mix(in oklab, #909090 16%, transparent);
+		padding-block-end: 1rem;
+	}
 
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
-}
+	code {
+		font-style: italic;
+	}
 
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+	pre code {
+		font-style: normal;
+	}
 }
