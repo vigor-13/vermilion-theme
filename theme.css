@@ -15,6 +15,9 @@
 	--checkbox-marker-color: #000000;
 	--checklist-done-color: color-mix(in oklab, #909090 60%, transparent);
 	--line-height-normal: 1.6;
+	--tag-color: #d8d2c9;
+	--tag-radius: 4px;
+	--tag-background: color-mix(in oklab, #909090 16%, transparent);
 
 	.view-header,
 	.view-content {
@@ -42,6 +45,16 @@
 
 	pre code {
 		font-style: normal;
+	}
+
+	.metadata-container {
+		background: color-mix(in oklab, #909090 3%, transparent);
+		border-radius: 10px;
+		padding: 1rem;
+		margin-block: 2rem;
+	}
+	.metadata-properties-heading {
+		display: none;
 	}
 
 	.mermaid {
