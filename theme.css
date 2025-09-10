@@ -47,6 +47,11 @@
 		font-style: normal;
 	}
 
+	pre {
+		background: color-mix(in oklab, #909090 3%, transparent);
+		border-radius: 10px;
+	}
+
 	.metadata-container {
 		background: color-mix(in oklab, #909090 3%, transparent);
 		border-radius: 10px;
