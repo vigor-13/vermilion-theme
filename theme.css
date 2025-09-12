@@ -5,6 +5,7 @@
 
 	--color-moon-gray: #909090;
 	--color-moon-gray-03: color-mix(in oklab, #909090 3%, transparent);
+	--color-moon-gray-06: color-mix(in oklab, #909090 6%, transparent);
 	--color-moon-gray-08: color-mix(in oklab, #909090 8%, transparent);
 	--color-moon-gray-16: color-mix(in oklab, #909090 16%, transparent);
 	--color-moon-gray-60: color-mix(in oklab, #909090 60%, transparent);
@@ -66,7 +67,7 @@
 	}
 
 	pre {
-		background: var(--color-black-30) !important;
+		background: var(--color-moon-gray-06) !important;
 		border-radius: var(--radius-m);
 	}
 	pre code {
