@@ -1,31 +1,53 @@
 .theme-dark {
-	--text-normal: #909090;
-	--bold-color: #d1462c;
-	--link-color: #5590d9;
-	--link-external-color: #5590d9;
-	--code-normal: #d8d2c9;
-	--h1-color: #f4f6f0;
-	--h2-color: #f4f6f0;
-	--h3-color: #f4f6f0;
-	--h4-color: #f4f6f0;
-	--h5-color: #f4f6f0;
-	--h6-color: #f4f6f0;
-	--checkbox-radius: 100px;
-	--checkbox-color: #00ac5a;
-	--checkbox-marker-color: #000000;
-	--checklist-done-color: color-mix(in oklab, #909090 60%, transparent);
-	--line-height-normal: 1.6;
-	--tag-color: #d8d2c9;
-	--tag-radius: 4px;
-	--tag-background: color-mix(in oklab, #909090 16%, transparent);
+	--color-black: #000000;
+	--color-black-30: color-mix(in oklab, #000000 30%, transparent);
+	--color-black-60: color-mix(in oklab, #000000 60%, transparent);
 
-	.view-header,
-	.view-content {
-		background-color: color-mix(
-			in oklab,
-			#000000 30%,
-			transparent
-		) !important;
+	--color-moon-gray: #909090;
+	--color-moon-gray-03: color-mix(in oklab, #909090 3%, transparent);
+	--color-moon-gray-08: color-mix(in oklab, #909090 8%, transparent);
+	--color-moon-gray-16: color-mix(in oklab, #909090 16%, transparent);
+	--color-moon-gray-60: color-mix(in oklab, #909090 60%, transparent);
+
+	--color-moon-white: #f4f6f0;
+	--color-crescent-moon: #d8d2c9;
+	--color-pompeii-red: #d1462c;
+	--color-havelock-blue-color: #5590d9;
+	--color-muslim-green: #00ac5a;
+
+	--nav-item-color-active: var(--color-pompeii-red);
+	--nav-item-background-active: var(--color-moon-gray-08);
+	--tab-background-active: var(--color-black-30);
+	--tab-text-color-focused-active-current: var(--color-pompeii-red);
+	--text-normal: var(--color-moon-gray);
+	--bold-color: var(--color-pompeii-red);
+	--link-color: var(--color-havelock-blue-color);
+	--link-external-color: var(--color-havelock-blue-color);
+	--code-normal: var(--color-crescent-moon);
+	--h1-color: var(--color-moon-white);
+	--h2-color: var(--color-moon-white);
+	--h3-color: var(--color-moon-white);
+	--h4-color: var(--color-moon-white);
+	--h5-color: var(--color-moon-white);
+	--h6-color: var(--color-moon-white);
+	--checkbox-radius: 100px;
+	--checkbox-color: var(--color-muslim-green);
+	--checkbox-marker-color: var(--color-black);
+	--checklist-done-color: var(--color-moon-gray-60);
+	--line-height-normal: 1.6;
+	--tag-color: var(--color-crescent-moon);
+	--tag-background: var(--color-moon-gray-08);
+	--tag-radius: 4px;
+	--blockquote-font-style: italic;
+	--blockquote-background-color: var(--color-moon-gray-03);
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 800;
 	}
 
 	h1 {
@@ -35,26 +57,44 @@
 
 	h2 {
 		border-bottom: 1px solid;
-		border-bottom-color: color-mix(in oklab, #909090 16%, transparent);
-		padding-block-end: 1rem;
+		border-bottom-color: var(--color-moon-gray-16);
+		padding-block-end: 0.8rem;
 	}
 
 	code {
 		font-style: italic;
 	}
 
+	pre {
+		background: var(--color-black-30) !important;
+		border-radius: var(--radius-m);
+	}
 	pre code {
 		font-style: normal;
 	}
 
-	pre {
-		background: color-mix(in oklab, #909090 3%, transparent);
-		border-radius: 10px;
+	blockquote {
+		padding-inline-start: 0;
+		border-inline-start: none;
+		padding: 1rem;
+		border-radius: var(--radius-m);
+		color: var(--color-crescent-moon);
+		font-weight: 100;
+	}
+
+	.view-header,
+	.view-content {
+		background-color: var(--color-black-30) !important;
+	}
+
+	.workspace-tab-header::before,
+	.workspace-tab-header::after {
+		display: none;
 	}
 
 	.metadata-container {
-		background: color-mix(in oklab, #909090 3%, transparent);
-		border-radius: 10px;
+		background: var(--color-moon-gray-03);
+		border-radius: var(--radius-m);
 		padding: 1rem;
 		margin-block: 2rem;
 	}
@@ -63,8 +103,8 @@
 	}
 
 	.mermaid {
-		background: color-mix(in oklab, #909090 3%, transparent);
-		border-radius: 10px;
+		background: var(--color-moon-gray-03);
+		border-radius: var(--radius-m);
 	}
 	.mermaid > * {
 		transform: scale(0.9);
