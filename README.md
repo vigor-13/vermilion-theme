@@ -23,8 +23,13 @@ A dark theme for Obsidian.
 
 ![Screenshot](screenshot-1.png)
 ![Screenshot](screenshot-2.png)
+![Screenshot](screenshot-3.png)
 
 ## Support
 
 -   Report issues: [GitHub Issues](https://github.com/vigor-13/vermilion-theme/issues)
 -   Author: [@vigor-13](https://github.com/vigor-13)
+
+## License
+
+This theme is licensed under the [MIT License](LICENSE).
