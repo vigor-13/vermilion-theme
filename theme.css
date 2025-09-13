@@ -63,6 +63,7 @@
 	--bold-color: var(--color-vermillion-red);
 	--link-color: var(--color-havelock-blue);
 	--link-external-color: var(--color-havelock-blue);
+	--link-unresolved-color: var(--color-havelock-blue);
 	--code-normal: var(--color-crescent-moon);
 	--h1-color: var(--color-moon-white);
 	--h2-color: var(--color-moon-white);
@@ -185,11 +186,27 @@
 		padding: 1rem;
 		border-radius: var(--radius-m);
 		color: var(--color-crescent-moon);
-		font-weight: 100;
+		font-weight: 400;
 	}
 
 	.callout {
 		border-radius: var(--radius-m);
+	}
+
+	hr {
+		border: none;
+		border-bottom: 3px dotted;
+		border-bottom-color: var(--color-moon-gray-16);
+		margin: 2rem 0;
+	}
+
+	mark {
+		background-color: var(--color-vermillion-red-30);
+		color: var(--color-moon-white);
+		padding: 0.1em 0.3em;
+		border-radius: 3px;
+		font-style: italic;
+		font-weight: 400;
 	}
 
 	.mermaid {
