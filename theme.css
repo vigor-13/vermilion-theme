@@ -137,6 +137,10 @@
 		color: var(--color-vermillion-red-70) !important;
 	}
 
+	.graph-controls.is-close {
+		background-color: transparent;
+	}
+
 	/* ---------- Markdown Contents ---------- */
 
 	h1,
@@ -193,7 +197,7 @@
 		border-radius: var(--radius-m);
 	}
 
-	hr {
+	.view-content hr {
 		border: none;
 		border-bottom: 3px dotted;
 		border-bottom-color: var(--color-moon-gray-16);
