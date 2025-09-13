@@ -31,6 +31,11 @@
 	);
 
 	--color-vermillion-red: #e34234;
+	--color-vermillion-red-30: color-mix(
+		in oklab,
+		var(--color-vermillion-red) 30%,
+		transparent
+	);
 	--color-vermillion-red-70: color-mix(
 		in oklab,
 		var(--color-vermillion-red) 70%,
@@ -42,10 +47,12 @@
 	--color-havelock-blue-color: #5590d9;
 	--color-muslim-green: #00ac5a;
 
+	--file-line-width: 65ch;
 	--nav-item-color-active: var(--color-vermillion-red-70);
 	--nav-item-background-active: var(--color-moon-gray-06);
-	--tab-background-active: var(--color-black-30);
 	--tab-text-color-focused-active-current: var(--color-vermillion-red-70);
+	--tab-background-active: transparent;
+	--divider-color-hover: var(--color-vermillion-red-30);
 	--text-normal: var(--color-moon-gray);
 	--bold-color: var(--color-vermillion-red);
 	--link-color: var(--color-havelock-blue-color);
@@ -99,6 +106,11 @@
 		padding-block-end: 0.8rem;
 	}
 
+	b,
+	strong {
+		font-weight: 500;
+	}
+
 	code {
 		font-style: italic;
 	}
@@ -126,9 +138,14 @@
 		font-weight: 100;
 	}
 
+	.workspace-tab-header.is-active .workspace-tab-header-inner,
+	.workspace-tab-header.mod-active .workspace-tab-header-inner {
+		background: var(--color-moon-gray-08);
+	}
+
 	.view-header,
 	.view-content {
-		background-color: var(--color-black-30) !important;
+		background-color: transparent !important;
 	}
 
 	.workspace-tab-header::before,
@@ -153,5 +170,17 @@
 	.mermaid > * {
 		transform: scale(0.9);
 		transform-origin: center;
+	}
+
+	.callout {
+		border-radius: var(--radius-m);
+	}
+
+	.pane-empty {
+		font-style: italic;
+	}
+
+	.token.comment {
+		font-style: italic;
 	}
 }
