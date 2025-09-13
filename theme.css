@@ -2,10 +2,10 @@
 	/* ---------- Custom Variables ---------- */
 
 	--color-black: #000000;
-	--color-arabic-black: #1d1c20;
+	--color-black-board: #1c1c1c;
 	--color-moon-white: #f4f6f0;
 	--color-crescent-moon: #d8d2c9;
-	--color-havelock-blue-color: #5590d9;
+	--color-havelock-blue: #5590d9;
 	--color-muslim-green: #00ac5a;
 
 	--color-moon-gray: #909090;
@@ -49,10 +49,10 @@
 
 	/* ---------- Obsidian Variables ---------- */
 
-	--background-primary: var(--color-arabic-black);
-	--background-primary-alt: var(--color-arabic-black);
-	--background-secondary: var(--color-arabic-black);
-	--background-secondary-alt: var(--color-arabic-black);
+	--background-primary: var(--color-black-board);
+	--background-primary-alt: var(--color-black-board);
+	--background-secondary: var(--color-black-board);
+	--background-secondary-alt: var(--color-black-board);
 	--file-line-width: 65ch;
 	--nav-item-color-active: var(--color-crescent-moon);
 	--nav-item-background-active: var(--color-moon-gray-06);
@@ -61,8 +61,8 @@
 	--divider-color-hover: var(--color-vermillion-red-30);
 	--text-normal: var(--color-moon-gray);
 	--bold-color: var(--color-vermillion-red);
-	--link-color: var(--color-havelock-blue-color);
-	--link-external-color: var(--color-havelock-blue-color);
+	--link-color: var(--color-havelock-blue);
+	--link-external-color: var(--color-havelock-blue);
 	--code-normal: var(--color-crescent-moon);
 	--h1-color: var(--color-moon-white);
 	--h2-color: var(--color-moon-white);
