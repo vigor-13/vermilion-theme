@@ -1,7 +1,12 @@
 .theme-dark {
+	/* ---------- Custom Variables ---------- */
+
 	--color-black: #000000;
-	--color-black-30: color-mix(in oklab, var(--color-black) 30%, transparent);
-	--color-black-60: color-mix(in oklab, var(--color-black) 60%, transparent);
+	--color-arabic-black: #1d1c20;
+	--color-moon-white: #f4f6f0;
+	--color-crescent-moon: #d8d2c9;
+	--color-havelock-blue-color: #5590d9;
+	--color-muslim-green: #00ac5a;
 
 	--color-moon-gray: #909090;
 	--color-moon-gray-03: color-mix(
@@ -42,11 +47,12 @@
 		transparent
 	);
 
-	--color-moon-white: #f4f6f0;
-	--color-crescent-moon: #d8d2c9;
-	--color-havelock-blue-color: #5590d9;
-	--color-muslim-green: #00ac5a;
+	/* ---------- Obsidian Variables ---------- */
 
+	--background-primary: var(--color-arabic-black);
+	--background-primary-alt: var(--color-arabic-black);
+	--background-secondary: var(--color-arabic-black);
+	--background-secondary-alt: var(--color-arabic-black);
 	--file-line-width: 65ch;
 	--nav-item-color-active: var(--color-crescent-moon);
 	--nav-item-background-active: var(--color-moon-gray-06);
@@ -75,6 +81,8 @@
 	--blockquote-font-style: italic;
 	--blockquote-background-color: var(--color-moon-gray-03);
 
+	/* ---------- System Interface ---------- */
+
 	::-webkit-scrollbar {
 		width: 10px;
 	}
@@ -85,6 +93,50 @@
 		background-color: var(--color-moon-gray-08);
 		border-radius: var(--radius-m);
 	}
+
+	.workspace-tab-header.is-active .workspace-tab-header-inner,
+	.workspace-tab-header.mod-active .workspace-tab-header-inner {
+		background: var(--color-moon-gray-08);
+	}
+
+	.view-header,
+	.view-content {
+		background-color: transparent !important;
+	}
+
+	.workspace-tab-header {
+		box-shadow: none;
+	}
+	.workspace-tab-header::before,
+	.workspace-tab-header::after {
+		display: none;
+	}
+
+	.inline-title {
+		color: var(--color-moon-gray);
+	}
+
+	.metadata-container {
+		background: var(--color-moon-gray-03);
+		border-radius: var(--radius-m);
+		padding: 1rem;
+		margin-block: 2rem;
+	}
+	.metadata-properties-heading {
+		display: none;
+	}
+
+	.pane-empty {
+		font-style: italic;
+	}
+
+	.workspace-drawer-vault-switcher .workspace-drawer-vault-name,
+	.workspace-drawer-vault-switcher .workspace-drawer-vault-switcher-icon,
+	.sidebar-toggle-button .clickable-icon {
+		color: var(--color-vermillion-red-70) !important;
+	}
+
+	/* ---------- Markdown Contents ---------- */
 
 	h1,
 	h2,
@@ -123,6 +175,10 @@
 		font-style: normal;
 	}
 
+	.token.comment {
+		font-style: italic;
+	}
+
 	blockquote {
 		padding-inline-start: 0;
 		border-inline-start: none;
@@ -132,39 +188,8 @@
 		font-weight: 100;
 	}
 
-	.nav-folder-title[data-count]::after {
-		color: var(--color-crescent-moon);
-		font-style: italic;
-		font-weight: 100;
-	}
-
-	.workspace-tab-header.is-active .workspace-tab-header-inner,
-	.workspace-tab-header.mod-active .workspace-tab-header-inner {
-		background: var(--color-moon-gray-08);
-	}
-
-	.view-header,
-	.view-content {
-		background-color: transparent !important;
-	}
-
-	.workspace-tab-header::before,
-	.workspace-tab-header::after {
-		display: none;
-	}
-
-	.inline-title {
-		color: var(--color-moon-gray);
-	}
-
-	.metadata-container {
-		background: var(--color-moon-gray-03);
+	.callout {
 		border-radius: var(--radius-m);
-		padding: 1rem;
-		margin-block: 2rem;
-	}
-	.metadata-properties-heading {
-		display: none;
 	}
 
 	.mermaid {
@@ -176,25 +201,16 @@
 		transform-origin: center;
 	}
 
-	.callout {
-		border-radius: var(--radius-m);
-	}
+	/* ---------- Plugin: File explorer note count ---------- */
 
-	.pane-empty {
+	.nav-folder-title[data-count]::after {
+		color: var(--color-crescent-moon);
 		font-style: italic;
+		font-weight: 100;
 	}
 
-	.token.comment {
-		font-style: italic;
-	}
+	/* ---------- Plugin: Day Planner ---------- */
 
-	.workspace-drawer-vault-switcher .workspace-drawer-vault-name,
-	.workspace-drawer-vault-switcher .workspace-drawer-vault-switcher-icon,
-	.sidebar-toggle-button .clickable-icon {
-		color: var(--color-vermillion-red-70) !important;
-	}
-
-	/* Timeline */
 	.workspace-leaf-content[data-type="planner-timeline"] .view-header,
 	.workspace-leaf-content[data-type="planner-timeline"] .view-content,
 	.workspace-leaf-content[data-type="planner-timeline"]
