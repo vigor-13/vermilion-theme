@@ -81,6 +81,8 @@
 	--tag-radius: 4px;
 	--blockquote-font-style: italic;
 	--blockquote-background-color: var(--color-moon-gray-03);
+	--callout-padding: 12px;
+	/*--icon-size: 12px;*/
 
 	/* ---------- System Interface ---------- */
 
@@ -196,6 +198,16 @@
 	.callout {
 		border-radius: var(--radius-m);
 	}
+	.callout-title {
+		gap: 0.6rem;
+		align-items: center;
+	}
+	.callout-icon {
+		--icon-size: 16px;
+		background-color: rgba(255, 255, 255, 0.035);
+		padding: 4px;
+		border-radius: 6px;
+	}
 
 	.view-content hr {
 		border: none;
@@ -216,10 +228,6 @@
 	.mermaid {
 		background: var(--color-moon-gray-03);
 		border-radius: var(--radius-m);
-	}
-	.mermaid > * {
-		transform: scale(0.9);
-		transform-origin: center;
 	}
 
 	/* ---------- Plugin: File explorer note count ---------- */
