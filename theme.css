@@ -230,6 +230,18 @@
 		border-radius: var(--radius-m);
 	}
 
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		scale: 0.9;
+	}
+
+	p:has(> img) {
+		background: var(--color-moon-gray-03) !important;
+		border-radius: var(--radius-m);
+	}
+
 	/* ---------- Plugin: File explorer note count ---------- */
 
 	.nav-folder-title[data-count]::after {
