@@ -246,6 +246,10 @@
 		border-radius: var(--radius-m);
 	}
 
+	.markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+		max-width: 100%;
+	}
+
 	/* ---------- Plugin: File explorer note count ---------- */
 
 	.nav-folder-title[data-count]::after {
