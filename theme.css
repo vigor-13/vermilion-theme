@@ -60,7 +60,7 @@
 	--tab-background-active: transparent;
 	--divider-color-hover: var(--color-vermillion-red-30);
 	--text-normal: var(--color-moon-gray);
-	--bold-color: var(--color-vermillion-red);
+	--bold-color: var(--color-vermillion-red-70);
 	--link-color: var(--color-havelock-blue);
 	--link-external-color: var(--color-havelock-blue);
 	--link-unresolved-color: var(--color-havelock-blue);
@@ -167,6 +167,10 @@
 
 	b,
 	strong {
+		font-weight: 600;
+	}
+
+	p {
 		font-weight: 400;
 	}
 
