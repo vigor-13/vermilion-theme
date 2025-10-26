@@ -29,9 +29,19 @@
 		var(--color-moon-gray) 16%,
 		transparent
 	);
+	--color-moon-gray-40: color-mix(
+		in oklab,
+		var(--color-moon-gray) 40%,
+		transparent
+	);
 	--color-moon-gray-60: color-mix(
 		in oklab,
 		var(--color-moon-gray) 60%,
+		transparent
+	);
+	--color-moon-gray-80: color-mix(
+		in oklab,
+		var(--color-moon-gray) 80%,
 		transparent
 	);
 
@@ -141,6 +151,10 @@
 
 	.graph-controls.is-close {
 		background-color: transparent;
+	}
+
+	.multi-select-pill {
+		font-style: italic;
 	}
 
 	/* ---------- Markdown Contents ---------- */
@@ -285,5 +299,69 @@
 		.content {
 		border: none;
 		background-color: var(--color-moon-gray-08) !important;
+	}
+
+	/* ---------- Plugin: Notebook Navigator ---------- */
+	.nn-list-pane,
+	.nn-list-pane .nn-pane-header,
+	.nn-list-pane-scroller {
+		background-color: transparent !important;
+	}
+	.nn-file-content::before {
+		background-color: var(--color-moon-gray-03);
+		content: "";
+		position: absolute;
+		top: 0;
+		inset-inline-start: 0;
+		inset-inline-end: 0;
+		bottom: 0;
+		border-radius: min(16px, var(--nn-theme-file-border-radius));
+		z-index: 0;
+	}
+	.nn-file.nn-selected .nn-file-content::before {
+		background-color: var(--color-moon-gray-08);
+	}
+	.nn-date-group-header {
+		font-weight: 400;
+		font-size: 0.85rem;
+		color: var(--color-crescent-moon);
+	}
+	.nn-file-name {
+		color: var(--color-moon-gray) !important;
+	}
+	.nn-file-preview {
+		font-size: 0.8rem;
+		color: var(--color-moon-gray-80) !important;
+	}
+	.nn-file-tag {
+		color: var(--color-crescent-moon);
+		background: var(--color-moon-gray-08) !important;
+		border-radius: 4px;
+		font-size: 0.75rem;
+		font-style: italic;
+		padding: 0 6px;
+	}
+	.nn-virtual-file-item:not(.nn-last-file)::after {
+		inset-inline-start: 5px;
+		inset-inline-end: 5px;
+		background-color: var(--color-moon-gray-06) !important;
+	}
+	.nn-file-second-line {
+		justify-content: space-between;
+	}
+	.nn-file-date {
+		flex: 1;
+		font-size: 0.8rem;
+		color: var(--color-moon-gray-40) !important;
+	}
+	.nn-file-folder-icon {
+		--icon-size: 0.9rem;
+		color: var(--color-moon-gray-40) !important;
+	}
+	.nn-file-folder {
+		flex: 1;
+		font-size: 0.8rem;
+		justify-content: flex-end;
+		color: var(--color-moon-gray-40) !important;
 	}
 }
