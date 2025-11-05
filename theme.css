@@ -57,6 +57,9 @@
 		transparent
 	);
 
+	--vermillion-icon-stroke: 1.2px;
+	--vermillion-icon-size: 14px;
+
 	/* ---------- Obsidian Variables ---------- */
 
 	--background-primary: var(--color-black-board);
@@ -92,7 +95,13 @@
 	--blockquote-font-style: italic;
 	--blockquote-background-color: var(--color-moon-gray-03);
 	--callout-padding: 12px;
-	/*--icon-size: 12px;*/
+	--icon-size: var(--vermillion-icon-size);
+	--icon-stroke: var(--vermillion-icon-stroke);
+	--ribbon-width: 36px;
+	--header-height: 36px;
+	--tab-font-size: 12px;
+	--nav-item-size: 12px;
+	--file-margins: 24px;
 
 	/* ---------- System Interface ---------- */
 
@@ -155,6 +164,30 @@
 
 	.multi-select-pill {
 		font-style: italic;
+	}
+
+	.workspace-tab-header-inner {
+		padding: 0 6px;
+	}
+	svg.svg-icon {
+		width: var(--vermillion-icon-size) !important;
+		height: var(--vermillion-icon-size) !important;
+		stroke-width: var(--vermillion-icon-stroke) !important;
+	}
+
+	.nav-header .search-input-container {
+		margin-top: 8px;
+	}
+	.search-input-container:before {
+		top: calc((var(--input-height) - var(--vermillion-icon-size)) / 2);
+		inset-inline-start: 12px;
+		width: var(--vermillion-icon-size) !important;
+		height: var(--vermillion-icon-size) !important;
+		stroke-width: var(--vermillion-icon-stroke) !important;
+	}
+
+	.nav-files-container {
+		padding-left: 8px;
 	}
 
 	/* ---------- Markdown Contents ---------- */
@@ -264,6 +297,18 @@
 		max-width: 100%;
 	}
 
+	.workspace-sidedock-vault-profile {
+		padding: 4px !important;
+	}
+
+	/* ---------- Plugin: Iconize ---------- */
+
+	.iconize-icon svg {
+		width: var(--vermillion-icon-size) !important;
+		height: var(--vermillion-icon-size) !important;
+		stroke-width: var(--vermillion-icon-stroke) !important;
+	}
+
 	/* ---------- Plugin: File explorer note count ---------- */
 
 	.nav-folder-title[data-count]::after {
@@ -363,5 +408,8 @@
 		font-size: 0.8rem;
 		justify-content: flex-end;
 		color: var(--color-moon-gray-40) !important;
+	}
+	.nn-header-actions button.nn-icon-button {
+		min-width: 30px;
 	}
 }
