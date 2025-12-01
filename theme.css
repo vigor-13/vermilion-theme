@@ -294,12 +294,8 @@
 		display: block;
 		width: 100%;
 		height: auto;
-		scale: 0.9;
-	}
-
-	p:has(> img) {
-		background: var(--color-moon-gray-03) !important;
 		border-radius: var(--radius-m);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 	}
 
 	.markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
