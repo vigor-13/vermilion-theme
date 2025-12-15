@@ -232,6 +232,7 @@
 
 	code {
 		font-style: italic;
+		background: var(--color-moon-gray-16);
 	}
 
 	pre {
@@ -240,6 +241,7 @@
 	}
 	pre code {
 		font-style: normal;
+		background: none;
 	}
 
 	.token.comment {
