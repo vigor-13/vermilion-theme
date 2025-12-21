@@ -259,6 +259,7 @@
 
 	.callout {
 		border-radius: var(--radius-m);
+		margin-block: 2rem;
 	}
 	.callout-title {
 		gap: 0.6rem;
